@@ -1,0 +1,249 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\wladi\\Documents\\GitHub\\DIVA\\whitelist\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1630048755764,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "C:\\Users\\wladi\\Documents\\GitHub\\DIVA\\whitelist\\contracts\\Whitelist.sol": {
+      "lastModificationDate": 1630943823602,
+      "contentHash": "3fefae01c97883d06a3880004fbe1703",
+      "sourceName": "contracts/Whitelist.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IWhitelist.sol"
+      ],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "Whitelist"
+      ]
+    },
+    "C:\\Users\\wladi\\Documents\\GitHub\\DIVA\\whitelist\\contracts\\interfaces\\IWhitelist.sol": {
+      "lastModificationDate": 1630943875528,
+      "contentHash": "6a9029411d4f1a47b3612cd0a2e89e84",
+      "sourceName": "contracts/interfaces/IWhitelist.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "IWhitelist"
+      ]
+    },
+    "C:\\Users\\wladi\\Documents\\GitHub\\Walodja1987\\whitelist\\contracts\\interfaces\\IWhitelist.sol": {
+      "lastModificationDate": 1630943986925,
+      "contentHash": "6a9029411d4f1a47b3612cd0a2e89e84",
+      "sourceName": "contracts/interfaces/IWhitelist.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "IWhitelist"
+      ]
+    },
+    "C:\\Users\\wladi\\Documents\\GitHub\\Walodja1987\\whitelist\\contracts\\Whitelist.sol": {
+      "lastModificationDate": 1630944231026,
+      "contentHash": "0e1354ea9be877a53ec7e96055e74a34",
+      "sourceName": "contracts/Whitelist.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IWhitelist.sol"
+      ],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "Whitelist"
+      ]
+    },
+    "C:\\Users\\wladi\\Documents\\GitHub\\Moonstarter\\moonstarter-smart-contracts-starter\\contracts\\interfaces\\IWhitelist.sol": {
+      "lastModificationDate": 1630943986925,
+      "contentHash": "6a9029411d4f1a47b3612cd0a2e89e84",
+      "sourceName": "contracts/interfaces/IWhitelist.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "IWhitelist"
+      ]
+    },
+    "C:\\Users\\wladi\\Documents\\GitHub\\Moonstarter\\moonstarter-smart-contracts-starter\\contracts\\Whitelist.sol": {
+      "lastModificationDate": 1630944231026,
+      "contentHash": "0e1354ea9be877a53ec7e96055e74a34",
+      "sourceName": "contracts/Whitelist.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IWhitelist.sol"
+      ],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "Whitelist"
+      ]
+    }
+  }
+}

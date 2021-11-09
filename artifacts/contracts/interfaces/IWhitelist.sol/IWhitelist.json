@@ -1,0 +1,298 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IWhitelist",
+  "sourceName": "contracts/interfaces/IWhitelist.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "providerAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "underlying",
+          "type": "string"
+        }
+      ],
+      "name": "ActivatedDatafeedByProvider",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "providerAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "underlying",
+          "type": "string"
+        }
+      ],
+      "name": "AddedDatafeed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "providerAddress",
+          "type": "address"
+        }
+      ],
+      "name": "AddedToWhitelist",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "providerAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "underlying",
+          "type": "string"
+        }
+      ],
+      "name": "DeactivatedDatafeedByProvider",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "providerAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "underlying",
+          "type": "string"
+        }
+      ],
+      "name": "RemovedDatafeed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "providerAddress",
+          "type": "address"
+        }
+      ],
+      "name": "RemovedFromWhitelist",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "providerAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "underlying",
+          "type": "string"
+        }
+      ],
+      "name": "UpdatedDatafeedActiveFlagByOwner",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_index",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "string[]",
+          "name": "_matchUnderlying",
+          "type": "string[]"
+        }
+      ],
+      "name": "activateDatafeeds",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        },
+        {
+          "internalType": "string[]",
+          "name": "_underlyings",
+          "type": "string[]"
+        }
+      ],
+      "name": "addDatafeeds",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "_address",
+          "type": "address[]"
+        }
+      ],
+      "name": "addToWhitelist",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_index",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "string[]",
+          "name": "_matchUnderlying",
+          "type": "string[]"
+        }
+      ],
+      "name": "deactivateDatafeeds",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllProviders",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "getDatafeeds",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "underlying",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "isActive",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IWhitelist.Datafeed[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "isWhitelisted",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "_address",
+          "type": "address[]"
+        }
+      ],
+      "name": "removeFromWhitelist",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
