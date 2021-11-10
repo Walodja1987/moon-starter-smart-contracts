@@ -13,9 +13,19 @@ contract PoolFactory {
         uint256 _minimumStake, 
         uint256 _maximumStake, 
         uint256 _tokenValuationUSDC,
-        uint256 _expiry
+        uint256 _expiry,
+        uint256 _maxFutureTokenSupply,
+        uint256 _poolTokenSupply
         ) public {
-            address newPool = new Pool(_manager, _minimumStake, _maximumStake, _tokenValuationUSDC, _expiry);
+            address newPool = new Pool(
+                _manager, 
+                _minimumStake, 
+                _maximumStake, 
+                _tokenValuationUSDC, 
+                _expiry, 
+                _maxFutureTokenSupply, 
+                _poolTokenSupply
+            );
             deployedPools.push(newPool);
     }
 
@@ -24,3 +34,5 @@ contract PoolFactory {
     }
     
 }
+
+// Openzeppelin: consider integrating lifecylce contracts (delete, pause)
